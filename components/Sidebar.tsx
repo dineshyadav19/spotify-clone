@@ -7,6 +7,7 @@ import { BiSearch } from 'react-icons/bi';
 import Box from './Box';
 import SidebarItem from './SidebarItem';
 import SidebarFooter from './SidebarFooter';
+import Library from './Library';
 
 type SidebarProps = {
   children: React.ReactNode;
@@ -39,8 +40,8 @@ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
             <SidebarItem key={route.label} {...route} />
           ))}
         </Box>
-        <Box className="h-full overflow-y-auto px-5 py-4">
-          The Playlist
+        <Box className="h-full overflow-y-auto">
+          <Library />
           <SidebarFooter />
         </Box>
       </div>
