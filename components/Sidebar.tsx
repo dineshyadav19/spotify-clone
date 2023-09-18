@@ -45,7 +45,9 @@ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
           <SidebarFooter />
         </Box>
       </div>
-      <main className="h-full overscroll-y-auto flex-1 py-2">{children}</main>
+      <main className="h-full overscroll-y-auto flex-1 py-2 px-2 md:pl-0">
+        {children}
+      </main>
     </div>
   );
 };
