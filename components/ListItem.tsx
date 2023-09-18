@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import React from 'react';
@@ -13,6 +15,7 @@ const ListItem: React.FC<ListItemProps> = ({ image, href, name }) => {
   const router = useRouter();
 
   const onClick = () => {
+    //TODO: Add auth here
     router.push(href);
   };
   return (
