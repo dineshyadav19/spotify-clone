@@ -4,7 +4,7 @@ import React, { useMemo } from 'react';
 import { usePathname } from 'next/navigation';
 import { HiHome } from 'react-icons/hi';
 import { BiSearch } from 'react-icons/bi';
-import Box from '../Box';
+import Box from './Box';
 import SidebarItem from './SidebarItem';
 import SidebarFooter from './SidebarFooter';
 import Library from './Library';
@@ -45,9 +45,7 @@ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
           <SidebarFooter />
         </Box>
       </div>
-      <main className="h-full overscroll-y-auto flex-1 py-2 px-2 md:pl-0">
-        {children}
-      </main>
+      <main className="h-full overscroll-y-auto flex-1 py-2">{children}</main>
     </div>
   );
 };
