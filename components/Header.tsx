@@ -35,7 +35,6 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
     }
   };
 
-  console.log(user);
   return (
     <div
       className={twMerge(
