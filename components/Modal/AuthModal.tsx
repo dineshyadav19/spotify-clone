@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect } from 'react';
-import Modal from './Modal';
+import Modal from '../Modal';
 import { Auth } from '@supabase/auth-ui-react';
 import {
   useSessionContext,
